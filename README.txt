@@ -7,6 +7,9 @@ aim is to have this theme fully compatible with all versions of
 Moodle 2.
 
 ********** Updates ***********
+24/07/12
+- All links back to blue.
+
 12/06/12
 - Made this a child theme of Unitec Coroprate and stripped out any
   unnecessary code that wasn't directly related to changing colours
