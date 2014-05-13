@@ -1,64 +1,28 @@
 <?php
- 
-class theme_unitec_corporate_cib_core_renderer extends core_renderer {
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-// --- Start of custom menu modifications --- //
- 
-    protected function render_custom_menu(custom_menu $menu) {
+/**
+ * Essential theme with the underlying Bootstrap theme.
+ *
+ * @package    theme
+ * @subpackage Essential
+ * @author     Julian (@moodleman) Ridden
+ * @author     Based on code originally written by G J Bernard, Mary Evans, Bas Brands, Stuart Lamour and David Scotson.
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
-// Adds the "My Courses" drop down to the custom menu if user is
-// logged in AND enrolled in some courses.
+require_once('renderers/core_renderer.php');
 
-        $mycourses = $this->page->navigation->get('mycourses');
-        if (isloggedin() && $mycourses && $mycourses->has_children()) {
-            $branchlabel = get_string('mycourses');
-            $branchurl   = new moodle_url('/my');
-            $branchtitle = $branchlabel;
-            $branchsort  = -9999;
-            $branch = $menu->add($branchlabel, $branchurl, $branchtitle, $branchsort);
-            foreach ($mycourses->children as $coursenode) {
-                $branch->add($coursenode->get_content(), $coursenode->action, $coursenode->get_title());
-            }
-        }
-        
-// Adds a login or logout button to the end of the custom menu.
-
-        if (isloggedin()) {
-            $branchlabel = get_string('logout');
-            $branchurl   = new moodle_url('/login/logout.php');
-            $branchtitle = $branchlabel;
-            $branchsort = 10000;
-            $branch = $menu->add($branchlabel, $branchurl, $branchtitle, $branchsort);
-        } else {
-            $branchlabel = get_string('login');
-            $branchurl   = new moodle_url('/login/index.php');
-            $branchtitle = $branchlabel;
-            $branchsort = 10000;
-            $branch = $menu->add($branchlabel, $branchurl, $branchtitle, $branchsort);
-        }
-        
-// Adds the home button to the start of the custom menu.
-
-        if (isloggedin()) {
-            $branchlabel = get_string('home');
-            $branchurl = new moodle_url('/index.php');
-            $branchtitle = $branchlabel;
-            $branchsort = -10000;
-            $branch = $menu->add($branchlabel, $branchurl, $branchtitle, $branchsort);
-        } else {
-            $branchlabel = get_string('home');
-            $branchurl = new moodle_url('/index.php');
-            $branchtitle = $branchlabel;
-            $branchsort = -10000;
-            $branch = $menu->add($branchlabel, $branchurl, $branchtitle, $branchsort);
-        }
-        
-// Finishes the custom menu.
-
-        return parent::render_custom_menu($menu);
-    }
-
-// --- End of custom menu modifications --- //
-
-
-}

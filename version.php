@@ -1,22 +1,36 @@
 <?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
 /**
- * Theme version info
+ * This is built using the Clean template to allow for new theme's using
+ * Moodle's new Bootstrap theme engine
  *
- * @package    theme
- * @subpackage unitec
- * @copyright  2012 Unitec New Zealand
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ *
+ * @package   theme_essential
+ * @copyright 2013 Julian Ridden
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2012072400; // The current module version (Date: YYYYMMDDXX)
-$plugin->requires  = 2010112400; // Requires this Moodle version
-//Note that this plugin may work on earlier versions of Moodle 2 but has only been tested in 2.2
-//To change the version requirement to 2.0, use 2010112400
-//To change the version requirement to 2.1, use 2011070100
-//To change the version requirement to 2.2, use 2011120100
-//Note that if you change the version requirement to lower than 2.2, it is at your own risk!
-$plugin->maturity = MATURITY_STABLE;
-$plugin->release = '1.1 (Build: 2012072400)';
-$plugin->component = 'theme_unitec_corporate_cib'; // Full name of the plugin (used for diagnostics)
+$plugin->version   = 2013101600;        // YYYYMMDD.
+$plugin->maturity = MATURITY_STABLE;             // this version's maturity level.
+$plugin->release = '2.6 (Build: 20131008)';
+$plugin->requires  = 2013051401;        // Requires Moodle 2.5.1.
+$plugin->component = 'theme_unitec_corporate_cib';
+$plugin->dependencies = array(
+    'theme_bootstrapbase'  => 2013050100,
+);
