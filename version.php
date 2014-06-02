@@ -15,21 +15,16 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * This is built using the Clean template to allow for new theme's using
- * Moodle's new Bootstrap theme engine
+ * Unitec Corporate theme
  *
- *
- * @package   theme_essential
- * @copyright 2013 Julian Ridden
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package    theme_unitec_corporate
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2013101600;        // YYYYMMDD.
-$plugin->maturity = MATURITY_STABLE;             // this version's maturity level.
-$plugin->release = '2.6 (Build: 20131008)';
-$plugin->requires  = 2013051401;        // Requires Moodle 2.5.1.
+$plugin->version   = 2014060300;
+$plugin->requires  = 2013050100;
 $plugin->component = 'theme_unitec_corporate_cib';
 $plugin->dependencies = array(
     'theme_bootstrapbase'  => 2013050100,
