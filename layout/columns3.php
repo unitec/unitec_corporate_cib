@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Unitec Corporate theme
+ * Unitec CIB theme
  *
- * @package   theme_unitec_corporate
+ * @package   theme_unitec_corporate_cib
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -37,12 +37,19 @@ echo $OUTPUT->doctype() ?>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 </head>
 
 <body <?php echo $OUTPUT->body_attributes(); ?>>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
+<div id="branding">
+    <div class="siteshortname"><?php echo $SITE->shortname; ?></div>
+    <div class="sitedescription"><?php p(strip_tags(format_text($SITE->summary, FORMAT_HTML))) ?></div>
+    <div class="headerlogin"><?php echo $OUTPUT->login_info() ?></div>
+</div>
+    
 <header role="banner" class="navbar navbar-fixed-top<?php echo $html->navbarclass ?>">
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
@@ -56,7 +63,7 @@ echo $OUTPUT->doctype() ?>
                 <?php echo $OUTPUT->custom_menu(); ?>
                 <ul class="nav pull-right">
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                    <li class="navbar-text"><?php echo $OUTPUT->login_info() ?></li>
+                    <!-- <li class="navbar-text"><?php // echo $OUTPUT->login_info() ?></li> -->
                 </ul>
             </div>
         </div>
@@ -70,7 +77,7 @@ echo $OUTPUT->doctype() ?>
             <nav class="breadcrumb-nav"><?php echo $OUTPUT->navbar(); ?></nav>
             <div class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></div>
         </div>
-        <?php echo $html->heading; ?>
+        <?php // echo $html->heading; ?>
         <div id="course-header">
             <?php echo $OUTPUT->course_header(); ?>
         </div>
@@ -93,6 +100,7 @@ echo $OUTPUT->doctype() ?>
     </div>
 
     <footer id="page-footer">
+        <a href="#top">Back to top</a><br>
         <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
         <p class="helplink"><?php echo $OUTPUT->page_doc_link(); ?></p>
         <?php
@@ -106,5 +114,6 @@ echo $OUTPUT->doctype() ?>
     <?php echo $OUTPUT->standard_end_of_body_html() ?>
 
 </div>
+    
 </body>
 </html>

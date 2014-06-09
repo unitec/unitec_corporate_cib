@@ -24,14 +24,14 @@
 $string['choosereadme'] = '
 <div class="clearfix">
 <div class="well">
-<h2>Unitec Corporate CIB</h2>
+<h2>Unitec CIB</h2>
 <p><img class=img-polaroid src="unitec_corporate_cib/pix/screenshot.jpg" /></p>
 </div>
 <div class="well">
 <h3>About</h3>
-<p>Unitec Corporate CIB is based of Clean, a modified Moodle bootstrap theme which inherits styles and renderers from its parent theme.</p>
+<p>Unitec CIB is based of Clean, a modified Moodle bootstrap theme which inherits styles and renderers from its parent theme.</p>
 <h3>Parents</h3>
-<p>Clean (and therefore Unitec Corporate CIB) is a child of the Bootstrap theme, which was created for Moodle 2.5, with the help of:<br>
+<p>Clean (and therefore Unitec CIB) is a child of the Bootstrap theme, which was created for Moodle 2.5, with the help of:<br>
 Stuart Lamour, Mark Aberdour, Paul Hibbitts, Mary Evans.</p>
 <h3>Theme Credits</h3>
 <p>Authors: Miriam Laidlaw<br>
@@ -39,7 +39,7 @@ Contact: elearn@unitec.ac.nz<br>
 Website: <a href="http://moodle.unitec.ac.nz">Unitec eLearn</a>
 </div></div>';
 
-$string['configtitle'] = 'Unitec Corporate CIB';
+$string['configtitle'] = 'Unitec CIB';
 
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Whatever CSS rules you add to this textarea will be reflected in every page, making for easier customization of this theme.';
@@ -55,8 +55,13 @@ $string['logodesc'] = 'Please upload your custom logo here if you want to add it
 If the height of your logo is more than 75px add the following CSS rule to the Custom CSS box below.<br>
 a.logo {height: 100px;} or whatever height in pixels the logo is.';
 
-$string['pluginname'] = 'Unitec Corporate CIB';
+$string['pluginname'] = 'Unitec CIB';
 
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
 
+$string['mycourses'] = 'My Courses';
+$string['noenrolments'] = 'You have no current enrolments';
+
+/* My Dashboard custommenu dropdown */
+$string['mydashboard'] = 'My Dashboard';

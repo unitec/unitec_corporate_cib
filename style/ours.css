@@ -1,0 +1,282 @@
+/**
+*   Colours used: 
+*   Main green: #126c94
+*   Light green: #ba75c3
+*   Blue: blue
+*/
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #FFFFFF;
+}
+
+body {
+    padding-top: 0px;
+    border-top: 3px solid #126c94;
+    background-image: none;
+}
+
+#page-site-index #page-content {
+    padding-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.course-content .single-section .section-navigation .title {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: normal;
+    font-size: 24.5px;
+}
+
+#region-main {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row-fluid [class*="span"] {
+    margin-left: 1%;
+}
+
+.container-fluid {
+    padding-right: 10px;
+    padding-left: 10px;
+    max-width: 4000px;
+}
+
+/* Branding at the top */
+
+#branding {
+    background-image: url([[pix:theme|banner_top_left]]);
+    background-position: top left;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 98%;
+    position: relative;
+    padding-right: 20px;
+}
+
+#branding .headerlogin {
+    text-align: right;
+    padding-top: 10px;
+    float: right;
+}
+
+#branding .siteshortname {
+    font-size: 25pt;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    left: 250px;
+    top: 32px;
+}
+
+#branding .sitedescription {
+    font-size: 14px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    left: 250px;
+    top: 60px;
+}
+
+/* Navigation bar (Custom menu) */
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    position: relative;
+}
+
+.navbar-fixed-top .navbar-inner, 
+.navbar-fixed-bottom .navbar-inner {
+    padding-left: 25px;
+}
+
+.navbar-inner {
+    background-image: none;
+    background: #126c94;
+}
+
+.navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+    color: #FFFFFF !important;
+    text-decoration: none;
+}
+
+.navbar .nav > li > a {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #000000;
+}
+
+.dropdown-menu > li > a,
+.dropdown-menu a {
+    color: #000000 !important;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, 
+.navbar .nav li.dropdown.active > .dropdown-toggle, 
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    color: #FFFFFF !important;
+    background-color: #ba75c3;
+}
+
+.dropdown-menu > li > a:hover, 
+.dropdown-menu > li > a:focus, 
+.dropdown-submenu:hover > a, 
+.dropdown-submenu:focus > a {
+    color: #FFFFFF !important;
+    background-image: none;
+    background-color: #ba75c3;
+}
+
+.navbar-text {
+    color: #FFFFFF;
+}
+
+.navbar a {
+    color: #FFFFFF;
+}
+
+.navbar a:hover {
+    color: #ba75c3;
+}
+
+.navbar .brand {
+    color: white;
+    text-shadow: 0px 1px 0px #000000;
+}
+
+.navbar .nav li.dropdown > .dropdown-toggle .caret {
+    border-top-color: #FFFFFF;
+}
+
+.nav-collapse .nav > li > a, 
+.nav-collapse .dropdown-menu a {
+    color: #FFFFFF;
+}
+
+.nav-collapse .nav > li > a:hover, 
+.nav-collapse .nav > li > a:focus, 
+.nav-collapse .dropdown-menu a:hover, 
+.nav-collapse .dropdown-menu a:focus {
+    background-color: #ba75c3;
+}
+
+/* Breadcrumb navigation menu */
+
+.breadcrumb {
+    background-color: #FFFFFF;
+}
+
+/* Scrolling banner */
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 250px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  height: 250px;
+  background: #ccc;
+  text-align: center;
+  line-height: 250px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+/* Blocks */
+
+.block {
+    background-color: #FFFFFF;
+}
+
+.block .header h2 {
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Course */
+
+input[value="Turn editing on"] {
+    background-color: #3EA055;
+    background-image: none;
+}
+
+input[value="Turn editing on"]:hover {
+    background-image: none;
+    background-color: #4CC417;
+}
+
+input[value="Turn editing off"] {
+    background-color: #E42217;
+    background-image: none;
+}
+
+input[value="Turn editing off"]:hover {
+    background-image: none;
+    background-color: #FF0000;
+}
+
+/* Book */
+
+.path-mod-book .book_toc_numbered,
+.path-mod-book .book_toc_bullets,
+.path-mod-book .book_toc_indented,
+.path-mod-book .book_toc_none {
+    font-size: 1em;
+}

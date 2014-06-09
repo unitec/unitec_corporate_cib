@@ -30,6 +30,12 @@ echo $OUTPUT->doctype() ?>
 <body <?php echo $OUTPUT->body_attributes('two-column'); ?>>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
+    
+<div id="branding">
+    <div class="siteshortname"><?php echo $SITE->shortname; ?></div>
+    <div class="sitedescription"><?php p(strip_tags(format_text($SITE->summary, FORMAT_HTML))) ?></div>
+    <div class="headerlogin"><?php echo $OUTPUT->login_info() ?></div>
+</div>
 
 <header role="banner" class="navbar navbar-fixed-top<?php echo $html->navbarclass ?>">
     <nav role="navigation" class="navbar-inner">
@@ -44,7 +50,7 @@ echo $OUTPUT->doctype() ?>
                 <?php echo $OUTPUT->custom_menu(); ?>
                 <ul class="nav pull-right">
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                    <li class="navbar-text"><?php echo $OUTPUT->login_info() ?></li>
+                    <!-- <li class="navbar-text"><?php // echo $OUTPUT->login_info() ?></li> -->
                 </ul>
             </div>
         </div>
@@ -82,6 +88,7 @@ echo $OUTPUT->doctype() ?>
     </div>
 
     <footer id="page-footer">
+        <a href="#top">Back to top</a><br>
         <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
         <p class="helplink"><?php echo $OUTPUT->page_doc_link(); ?></p>
         <?php
