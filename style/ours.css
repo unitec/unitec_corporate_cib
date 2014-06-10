@@ -251,6 +251,12 @@ a.control_next {
     font-weight: bold;
 }
 
+.block.invisible {
+    background-color: #eaeaea;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.5) 10px, rgba(255,255,255,.5) 20px);
+    opacity: 1;
+}
+
 /* Course */
 
 input[value="Turn editing on"] {
@@ -271,6 +277,18 @@ input[value="Turn editing off"] {
 input[value="Turn editing off"]:hover {
     background-image: none;
     background-color: #FF0000;
+}
+
+.course-content ul li.section.hidden {
+    background-color: #eaeaea;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.5) 10px, rgba(255,255,255,.5) 20px);
+    opacity: 1;
+}
+
+.course-content .current {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px green;
+    border-radius: 7px;
 }
 
 /* Book */
