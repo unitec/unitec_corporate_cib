@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-fixed-top,
 .navbar-fixed-bottom {
     position: relative;
-    z-index: 0;
+    z-index: 4030;
 }
 
 .navbar-fixed-top .navbar-inner, 
@@ -298,4 +298,11 @@ input[value="Turn editing off"]:hover {
 .path-mod-book .book_toc_indented,
 .path-mod-book .book_toc_none {
     font-size: 1em;
+}
+
+/* Miscellaneous */
+
+.user-enroller-panel,
+.moodle-dialogue-base .moodle-dialogue {
+    z-index: 99999;
 }
